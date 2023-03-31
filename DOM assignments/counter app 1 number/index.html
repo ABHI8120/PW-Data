@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-box{
+            border: 1px solid black;
+            width: 25rem;
+            display: flex;
+            flex-direction:column ;
+            justify-content: center;
+            align-items: center;
+            padding: 20px ;
+            
+        }
+
+        button{
+            padding: 12px 10px ;
+            margin: 5px;
+            
+        }
+        span{
+            border: 2px solid #000;
+            padding: 12px 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main-box">
+        <h1>Counter App</h1>
+        <div class="box2">
+            <button id="decrementbtn">Decrement by -1</button>
+            <span id="displayValue">0</span>
+            <button id="incrementbtn">Increment by +1</button>
+        </div>
+        <button id="reset">Reset all</button>
+
+    </div>
+
+    <script>
+        // slecet all element 
+       const decrementbtn = document.getElementById("decrementbtn")
+      const dValue =  document.getElementById("displayValue")
+      const incrementbtn = document.getElementById("incrementbtn")
+      const reset =  document.getElementById("reset")
+        // console.log(Value);
+
+        // decrement
+decrementbtn.addEventListener("click",() =>{
+    const Value = Number(dValue.innerText)
+    if(Value > 0){
+        dValue.innerText = Value -1
+    }
+    else{
+        alert("kuch to gahad badad hai ")
+    }
+
+})
+// // increment
+incrementbtn.addEventListener("click", () =>{
+    const Value = Number(dValue.innerText)
+    if(Value >= 20){
+        alert("kuch to gahad badad hai" )
+        
+    }else{
+        dValue.innerText = Value +1 
+    }
+     
+})
+// reset
+reset.addEventListener("click",()=>{
+    dValue.innerText = ("0")
+})
+
+
+
+    </script>
+</body>
+</html>

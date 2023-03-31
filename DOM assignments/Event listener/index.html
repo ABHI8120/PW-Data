@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!-- on click -->
+    <div class="onclick">
+        <p>one click</p>
+        <button id="btn">click my 👇</button>
+    </div>
+
+    <!-- Dubble click -->
+    <div>
+        <p>Dubble click</p>
+        <button id="ddbtn"> Dubble click 👇</button>
+    </div>
+
+    <!-- Over mouse -->
+    <div class="">
+        <p>mouse over in</p>
+        <button id="Overmouse">Over mouse 👇</button>
+    </div>
+
+    <!-- Mouse Out -->
+    <div class="">
+        <p>Mouse over Out</p>
+        <button id="MouseOut">Mouse Out 👇</button>
+    </div>
+    
+    <!-- onkey press -->
+    <div class="">
+        <p>onkey press</p>
+        <button id="onkeyPress">onkey press 👇</button>
+    </div>
+
+    <!-- Up key -->
+    <div class="">
+        <p>Up key</p>
+        <button id="keyup">Up key 👇</button>
+    </div>
+    
+    <!-- Down key -->
+    <div class="">
+        <p>Down key</p>
+        <button id="keydown">Down key 👇</button>
+    </div>
+    
+    
+</body>
+
+
+<!-- start javascript  -->
+<script>
+
+
+// onclick ---------
+const btn = document.getElementById("btn")
+btn.addEventListener("click",()=>{
+    alert("you just a -> Onclick <- button")
+})
+
+// Dubble click  -------------
+let ddbtn = document.getElementById("ddbtn")
+ddbtn.addEventListener("dblclick",()=>{
+    alert("you just a -> Dubble click <- button")
+})
+
+// Overmouse ----------
+let Omouse = document.getElementById("Overmouse")
+Omouse.addEventListener("mouseover",()=>{
+    alert("you just a -> Overmouse <- button")
+})
+
+// MouseOut ----------
+let MouseOut = document.getElementById("MouseOut")
+MouseOut.addEventListener("mouseleave",()=>{
+    alert("you just a -> MouseOut <- button")
+})
+
+// onkayPreass -----------
+let onkeyPress = document.getElementById("onkeyPress")
+onkeyPress.addEventListener("keypress",()=>{
+    alert("you just a -> onkeyPress <- button")
+})
+
+// keyup ------------
+let keyup = document.getElementById("keyup")
+keyup.addEventListener("keyup",()=>{
+    alert("you just a -> KeyUp <- button")
+})
+
+// keyDown ------------
+let keydown = document.getElementById("keydown")
+keydown.addEventListener("keydown",()=>{
+    alert("you just a -> KeyDown <- button")
+})
+
+
+
+
+
+</script>
+
+
+</html>

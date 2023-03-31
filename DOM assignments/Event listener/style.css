@@ -1,0 +1,22 @@
+body{
+    height: 80vh;
+   padding: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+button{
+    padding: 20px 40px;
+    border: 2px solid #000;
+    font-size: 35px;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color:rgba(36, 246, 74, 0.892);
+    color: #fff;
+}
+p{
+    font-size: 30px;
+    font-weight: 800;
+}
